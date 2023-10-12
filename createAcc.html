@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ant Warrior</title>
+    <!-- Box-icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        section {
+            padding: 0 2rem;
+            max-height: 280px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="home" id="home">
+    </section>
+
+    <form class="modal-content" id="acc-create-form">
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" id="username" name="username" placeholder="Username" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+
+            <div class="container" style="text-align: center;">
+                <button type="submit" class="btn2">Create Account</button>
+            </div>
+        </div>
+    </form>
+
+    <script src="js/create.js"></script>
+</body>
+
+</html>

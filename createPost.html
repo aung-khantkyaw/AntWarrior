@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ant Warrior</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="home" id="home">
+    </section>
+
+    <h1 style="text-align: center; margin: 50px 0 -15px;">Create a New Blog</h1>
+
+    <form class="modal-content" id="post-create-form">
+        <div class="container">
+            <label for="title"><b>Title</b></label>
+            <input type="text" name="title" id="title" placeholder="Title" required>
+
+            <label for="image"><b>Image</b></label>
+            <input type="file" name="img" id="image" placeholder="" required>
+
+            <label for="content"><b>Content</b></label>
+            <input type="text" name="body" id="content" placeholder="Content" required>
+
+            <label for="createdBy"><b>Created By</b></label>
+            <input type="text" name="createdBy" id="createdBy" placeholder="Created By" required>
+
+            <div class="container" style="text-align: center;">
+                <button type="submit" class="btn2">Post</button>
+            </div>
+        </div>
+    </form>
+
+    <script src="js/createPost.js"></script>
+</body>
+
+</html>

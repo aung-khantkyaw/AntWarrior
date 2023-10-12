@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ant Warrior</title>
+    <!-- Box-icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        section {
+            padding: 0 2rem;
+            max-height: 280px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="home" id="home">
+    </section>
+
+    <div class="details">
+    </div>
+    <div class="btnSection d-none">
+        <button type="button" class="btn" onclick="document.getElementById('modal').style.display='block'">Edit</button>
+        <button type="button" class="btn delete">Delete</button>
+    </div>
+
+    <div id="modal" class="modal">
+        <form class="modal-content" id="edit-form">
+            <div class="container">
+                <label for="title"><b>Title</b></label>
+                <input type="text" name="title" id="title" placeholder="Title" required>
+
+                <label for="image"><b>Image</b></label>
+                <input type="file" name="img" id="image" placeholder="" required>
+
+                <label for="content"><b>Content</b></label>
+                <input type="text" name="body" id="content" placeholder="Content" required>
+
+                <label for="createdBy"><b>Created By</b></label>
+                <input type="text" name="createdBy" id="createdBy" placeholder="Created By" required>
+
+                <div class="container">
+                    <button type="submit" class="btn edit">Edit</button>
+                    <button class="btn" onclick="document.getElementById('modal').style.display='none'">Cancle</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/detail.js"></script>
+</body>
+
+</html>
