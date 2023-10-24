@@ -27,7 +27,7 @@ const createPost = async (e) => {
     created_by: post.createdBy.value,
   };
 
-  await fetch("http://localhost:3000/posts", {
+  await fetch("https://my-json-server.typicode.com/aung-khantkyaw/AntWarrior/posts", {
     method: "POST",
     body: JSON.stringify(doc),
     headers: { "Content-Type": "application/json" },
