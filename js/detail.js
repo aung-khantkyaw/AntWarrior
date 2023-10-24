@@ -22,7 +22,7 @@ function formatDate(date) {
 
 //Show Post Detail
 const renderDetails = async () => {
-  const res = await fetch("http://localhost:3000/posts/" + id);
+  const res = await fetch("https://my-json-server.typicode.com/aung-khantkyaw/AntWarrior/posts/" + id);
   const post = await res.json();
   const template = `
         <div class="post_detail">
@@ -51,7 +51,7 @@ const isAuthenticated = () => {
 if (isAuthenticated()) {
   renderDetails();
   deleteBtn.addEventListener("click", async (e) => {
-    const res = await fetch("http://localhost:3000/posts/" + id, {
+    const res = await fetch("https://my-json-server.typicode.com/aung-khantkyaw/AntWarrior/posts/" + id, {
       method: "DELETE",
     });
     window.location.replace("/index.html");
@@ -66,7 +66,7 @@ if (isAuthenticated()) {
       created_by: form.createdBy.value
     };
 
-    const res = await fetch("http://localhost:3000/posts/" + id, {
+    const res = await fetch("https://my-json-server.typicode.com/aung-khantkyaw/AntWarrior/posts/" + id, {
       method: "PUT",
       body: JSON.stringify(doc),
       headers: { "Content-Type": "application/json" },
