@@ -8,7 +8,7 @@ const createAcc = async (e) => {
     password: acc.password.value,
   };
 
-  await fetch("http://localhost:3000/users", {
+  await fetch("https://my-json-server.typicode.com/aung-khantkyaw/AntWarrior/users", {
     method: "POST",
     body: JSON.stringify(doc),
     headers: { "Content-Type": "application/json" },
