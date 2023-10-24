@@ -32,7 +32,7 @@ document.getElementById("login-form").addEventListener("submit", (e) => {
 
 // Function to handle login
 const login = async (username, password) => {
-  const usersData = await fetch("http://localhost:3000/users");
+  const usersData = await fetch("https://my-json-server.typicode.com/aung-khantkyaw/AntWarrior/users");
   const users = await usersData.json();
 
   const user = users.find((u) => u.username === username);
