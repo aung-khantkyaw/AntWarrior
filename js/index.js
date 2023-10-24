@@ -61,7 +61,7 @@ const displayLoginForm = () => {
 
   const container = document.querySelector(".card-list");
   const renderPosts = async () => {
-    let url = "http://localhost:3000/posts?_sort=id&_order=desc";
+    let url = "https://my-json-server.typicode.com/aung-khantkyaw/AntWarrior/posts?_sort=id&_order=desc";
 
     const res = await fetch(url);
     const posts = await res.json();
@@ -95,7 +95,7 @@ const displayAuthenticatedUser = () => {
 
   const container = document.querySelector(".card-list");
   const renderPosts = async () => {
-    let url = "http://localhost:3000/posts?_sort=id&_order=desc";
+    let url = "https://my-json-server.typicode.com/aung-khantkyaw/AntWarrior/posts?_sort=id&_order=desc";
 
     const res = await fetch(url);
     const posts = await res.json();
